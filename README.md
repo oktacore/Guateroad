@@ -1,2 +1,3 @@
 # Guateroad
-Plataforma para tour
+
+a [Sails](http://sailsjs.org) application
