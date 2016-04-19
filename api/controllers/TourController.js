@@ -20,7 +20,6 @@ module.exports = {
     });
   },
   mostrarListado: function (req, res) {
-
     Tour.find({}, function (err, tours) {
       sails.log.debug(tours);
       if (err) {
