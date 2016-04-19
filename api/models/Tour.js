@@ -1,8 +1,10 @@
 module.exports = {
+  tableName: 'Tour',
   attributes: {
     codigo: {
       type: 'int',
-      primaryKey: true
+      primaryKey: true,
+      autoIncrement: true
     },
     nombre: {
       type: 'string',
@@ -13,7 +15,7 @@ module.exports = {
       required: true
     },
     precio: {
-      type: 'double',
+      type: 'float',
       required: true
     },
     descripcion: {

@@ -1,4 +1,4 @@
-<form action="/Tour/creacion" method="post">
+<form action="/Tour/nuevo" method="post">
   <input type="text" name="nombre" placeholder="Nombre">
   <br/>
   <input type="date" name="fecha" placeholder="Fecha">
@@ -7,6 +7,7 @@
   <br/>
   <textarea name="descripcion" placeholder="Descripcion"></textarea>
   <br/>
+  <input type="submit" value="Crear" >
   <p>
     <%- typeof mensaje === 'undefined' ? '' : mensaje%>
   </p>
