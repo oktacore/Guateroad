@@ -1,0 +1,11 @@
+<p>
+  <%- typeof mensaje === 'undefined' ? '' : mensaje%>
+</p>
+<% for (var i = 0; i < tours.length; i++) { %>
+  <h1><%= tours[i].nombre %></h1>
+  <h2><%= tours[i].fecha %></h2>
+  <h4>Q. <%= tours[i].precio %></h4>
+  <p>
+    <%= tours[i].descripcion %>
+  </p>
+<% } %>

@@ -18,5 +18,16 @@ module.exports = {
       }
       res.view('Tour/Creacion', {mensaje: 'Creado con exito'});
     });
+  },
+  mostrarListado: function (req, res) {
+
+    Tour.find({}, function (err, tours) {
+      sails.log.debug(tours);
+      if (err) {
+        sails.log.error(err);
+        return res.view('Tour/Ver', {mensaje: 'Ocurrio un error al mostrar los tours'});
+      }
+      res.view('Tour/Ver', {tours: tours});
+    });
   }
 };

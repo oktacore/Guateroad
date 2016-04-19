@@ -46,6 +46,7 @@ module.exports.routes = {
   * for configuration options and examples.                                  *
   *                                                                          *
   ***************************************************************************/
+  'GET /Tour': 'Tour.mostrarListado',
   'GET /Tour/nuevo': 'Tour.formularioCreacion',
   'POST /Tour/nuevo': 'Tour.crear'
 };
