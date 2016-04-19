@@ -1,0 +1,13 @@
+<form action="/Tour/creacion" method="post">
+  <input type="text" name="nombre" placeholder="Nombre">
+  <br/>
+  <input type="date" name="fecha" placeholder="Fecha">
+  <br/>
+  <input type="number" name="precio" placeholder="Precio">
+  <br/>
+  <textarea name="descripcion" placeholder="Descripcion"></textarea>
+  <br/>
+  <p>
+    <%- typeof mensaje === 'undefined' ? '' : mensaje%>
+  </p>
+</form>

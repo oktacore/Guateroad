@@ -32,9 +32,10 @@ module.exports.routes = {
   *                                                                          *
   ***************************************************************************/
 
-  '/': {
-    view: 'homepage'
-  }
+  // '/': {
+  //   view: 'homepage'
+  // },
+
 
   /***************************************************************************
   *                                                                          *
@@ -45,5 +46,6 @@ module.exports.routes = {
   * for configuration options and examples.                                  *
   *                                                                          *
   ***************************************************************************/
-
+  'GET /Tour/nuevo': 'Tour.formularioCreacion',
+  'POST /Tour/nuevo': 'Tour.crear'
 };
